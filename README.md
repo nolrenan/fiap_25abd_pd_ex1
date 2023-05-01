@@ -34,9 +34,9 @@ A informação de horário presente no nome do arquivo ingerido foi implementada
 - <b>Step 4</b>: Criando diretório "dolar_dia" e "dolar_dia_bkp" no HDFS via HUE (localhost:8888)
 ![image](https://github.com/nolrenan/fiap_25abd_pd_ex1/blob/main/prints/manual/04-criar_pasta_dolar_dia_hdfs.png)
 
-![image](https://github.com/nolrenan/fiap_25abd_pd_ex1/blob/main/prints/manual/04b-criar_pasta_dolar_dia_bkp_hdfs.png)
-
 ![image](https://github.com/nolrenan/fiap_25abd_pd_ex1/blob/main/prints/manual/05-criar_pasta_dolar_dia_hdfs.png)
+
+![image](https://github.com/nolrenan/fiap_25abd_pd_ex1/blob/main/prints/manual/04b-criar_pasta_dolar_dia_bkp_hdfs.png)
 
 - <b>Step 5</b>: Acessando pasta "dolar_dia" e criando pasta referente à data de cotação
 ![image](https://github.com/nolrenan/fiap_25abd_pd_ex1/blob/main/prints/manual/06-criar_pasta_cotacao_dolar.png)
