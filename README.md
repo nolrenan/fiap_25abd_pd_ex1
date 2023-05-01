@@ -30,11 +30,14 @@ Para possibiliar a execução das aplicações dentro do ambiente de big data fo
 O ambiente de Big Data pode ser encontrado no seguinte repositório:
 - https://github.com/fabiogjardim/bigdata_docker
 
-Screenshots da execução dos scripts:
+### <b>5. Screenshots da execução dos scripts</b>
 
-- cotacao_dolar_final.sh
+#### cotacao_dolar_final.sh
+- <b>Step 1</b>: Transferindo script cotacao_dolar_final.sh para o container
+![image](https://github.com/nolrenan/fiap_25abd_pd_ex1/blob/main/prints/ingestao%20hdfs/transferindo-codigo-container.jpg)
 
-[INSERIR IMAGENS]
+- <b>Step 2</b>: Execução do script cotacao_dolar_final.sh e ls na pasta do dia 29/04/2023 com os arquivos
+![image](https://github.com/nolrenan/fiap_25abd_pd_ex1/blob/main/prints/ingestao%20hdfs/extracao-ingestao-hdfs.jpg)
 
 #### script_bkp_dolar_dia.sh
 - <b>Step 1</b>: Após simulação da inserção da data do dia 2023-05-01, a pasta é criada com o arquivo da cotação
