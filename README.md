@@ -8,8 +8,14 @@ As informações referentes à base podem ser encontradas através do seguitne l
 - https://dadosabertos.bcb.gov.br/dataset/dolar-americano-usd-todos-os-boletins-diarios
 
 ### <b>2. Arquitetura de pastas do HDFS</b>
-Devido a base em estudo se tratar de cotação diária de compra e venda de dólar, a distribuição do file system foi realizada em dois dois nívels: data da cotação e horário da cotação.
-O segundo nível de pasta (horário) foi criado porque podemos ter mais de uma cotação para o mesmo dia, dependendo do horário de captura.
+Devido a base em estudo se tratar de cotação diária de compra e venda de dólar, a distribuição do file system foi realizada por data da cotação e cada arquivo desta data é ingerido dentro da pasta respeitando a estrutura "cotacao_dolar_hh_mm.txt".
+
+Exemplo:
+
+Cotação do dólar capturada às 10h40 do dia 28/04/2023
+- Caminho do arquivo: /dolar_dia/2023-04-28/cotacao_dolar_1040.txt
+
+A informação de horário presente no nome do arquivo ingerido foi implementada para que todas as cotações capturadas de um mesmo dia sejam armazenadas. Desta forma, o processo permite a flexibilidade de alteração de periodicidade sem a necessidade de manutenção no processo.
 
 ### <b>3. Implantação de forma manual</b>
 [INSERCAO DE PRINTS]
