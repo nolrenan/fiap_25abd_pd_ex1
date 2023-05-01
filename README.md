@@ -5,25 +5,32 @@ Repositório para projeto do exercício 1 da matéria de <b>processamento e arma
 ### <b>1. Base de dados</b>
 Utilizamos como fonte de dados pública para o projeto a API de cotação do dólar comercial (venda e compra) disponibilizada pelo Banco Central do Brasil.
 As informações referentes à base podem ser encontradas através do seguitne link:
+- https://dadosabertos.bcb.gov.br/dataset/dolar-americano-usd-todos-os-boletins-diarios
 
-'''
-https://dadosabertos.bcb.gov.br/dataset/dolar-americano-usd-todos-os-boletins-diarios
-'''
+### <b>2. Arquitetura de pastas do HDFS</b>
+Devido a base em estudo se tratar de cotação diária de compra e venda de dólar, a distribuição do file system foi realizada em dois dois nívels: data da cotação e horário da cotação.
+O segundo nível de pasta (horário) foi criado porque podemos ter mais de uma cotação para o mesmo dia, dependendo do horário de captura.
 
-### <b>2. Desenvolvimento</b>
+### <b>3. Implantação de forma manual</b>
+[INSERCAO DE PRINTS]
+
+### <b>4. Desenvolvimento semi-automatizado</b>
 Para possibiliar a execução das aplicações dentro do ambiente de bigdata fornecido, foram desenvolvidos 3 scripts em shell (.sh):
-- <b>cotacao_dolar_final.sh</b>: realiza a captura dos dados e armazenamento do conteúdo no HDFS, sem realizar qualquer tipo de tratamento na resposta recebida pela API.
-- <b>script_bkp_dolar_dia.sh</b>: geração de backup do dado ingerido.
-- <b>script_retencao.sh</b>: gerencia a quantidade de dados que serão retidos no backup, ou seja, faz o expurgo dos dados mais antigos armazenados no backup.
+- <b>Step 1 - cotacao_dolar_final.sh</b>: realiza a captura dos dados e armazenamento do conteúdo no HDFS, sem realizar qualquer tipo de tratamento na resposta recebida pela API.
+- <b>Step 2 - script_bkp_dolar_dia.sh</b>: geração de backup do dado ingerido.
+- <b>Step 3 - script_retencao.sh</b>: gerencia a quantidade de dados que serão retidos no backup, ou seja, faz o expurgo dos dados mais antigos armazenados no backup.
 
 O ambiente de Big Data pode ser encontrado no seguinte repositório:
+- https://github.com/fabiogjardim/bigdata_docker
 
-'''
-https://github.com/fabiogjardim/bigdata_docker
-'''
+Screenshots da execução dos scripts:
 
-### <b>3. Arquitetura de pastas do HDFS</b>
-Devido a base em estudo se tratar de cotação diária de compra e venda de dólar, a distribuição do file system foi realizada em dois dois nívels: data da cotação e horário da cotação.
+- cotacao_dolar_final.sh
 
-Exemplo:
+[INSERIR IMAGENS]
+- script_bkp_dolar_dia.sh
 
+[INSERIR IMAGENS]
+- script_retencao.sh
+
+[INSERIR IMAGENS]
