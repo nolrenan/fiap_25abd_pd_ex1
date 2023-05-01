@@ -15,13 +15,13 @@ Exemplo:
 Cotação do dólar capturada às 10h40 do dia 28/04/2023
 - Caminho do arquivo: /dolar_dia/2023-04-28/cotacao_dolar_1040.txt
 
-A informação de horário presente no nome do arquivo ingerido foi implementada para que todas as cotações capturadas de um mesmo dia sejam armazenadas. Desta forma, o processo permite a flexibilidade de alteração de periodicidade sem a necessidade de manutenção no processo.
+A informação de horário presente no nome do arquivo ingerido foi implementada para que todas as cotações capturadas de um mesmo dia sejam armazenadas. Desta forma, o processo permite alterações de periodicidade sem a necessidade de manutenção no processo.
 
 ### <b>3. Implantação de forma manual</b>
 [INSERCAO DE PRINTS]
 
 ### <b>4. Desenvolvimento semi-automatizado</b>
-Para possibiliar a execução das aplicações dentro do ambiente de bigdata fornecido, foram desenvolvidos 3 scripts em shell (.sh):
+Para possibiliar a execução das aplicações dentro do ambiente de big data fornecido, foram desenvolvidos 3 scripts em shell (.sh):
 - <b>Step 1 - cotacao_dolar_final.sh</b>: realiza a captura dos dados e armazenamento do conteúdo no HDFS, sem realizar qualquer tipo de tratamento na resposta recebida pela API.
 - <b>Step 2 - script_bkp_dolar_dia.sh</b>: geração de backup do dado ingerido.
 - <b>Step 3 - script_retencao.sh</b>: gerencia a quantidade de dados que serão retidos no backup, ou seja, faz o expurgo dos dados mais antigos armazenados no backup.
