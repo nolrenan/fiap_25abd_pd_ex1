@@ -36,7 +36,7 @@ O ambiente de Big Data pode ser encontrado no seguinte repositório:
 - <b>Step 1</b>: Transferindo script cotacao_dolar_final.sh para o container
 ![image](https://github.com/nolrenan/fiap_25abd_pd_ex1/blob/main/prints/ingestao%20hdfs/transferindo-codigo-container.jpg)
 
-- <b>Step 2</b>: Execução do script cotacao_dolar_final.sh e ls na pasta do dia 29/04/2023 com os arquivos
+- <b>Step 2</b>: Execução do script cotacao_dolar_final.sh, ls na pasta do dia 28/04/2023 com os arquivos e cat no conteúdo do arquivo
 ![image](https://github.com/nolrenan/fiap_25abd_pd_ex1/blob/main/prints/ingestao%20hdfs/extracao-ingestao-hdfs.jpg)
 
 #### script_bkp_dolar_dia.sh
