@@ -47,9 +47,14 @@ A informação de horário presente no nome do arquivo ingerido foi implementada
 ![image](https://github.com/nolrenan/fiap_25abd_pd_ex1/blob/main/prints/manual/08-arquivo_repositorio.png)
 
 ## <b>3.1 Implantação de forma manual por scripts em shell</b>
-- <b>teste 1 </b>
+- <b>Realizando a copia da estrutura dos arquivos
 ![image](https://github.com/nolrenan/fiap_25abd_pd_ex1/blob/main/prints/manual_shew/copia_estruturaarquivos.png)
-
+- <b>Criação do historico 
+![image](https://github.com/nolrenan/fiap_25abd_pd_ex1/blob/main/prints/manual_shew/criacao_de_historico.png)
+- <b>Criação da estrutura de pastas e arquivos enviadas para namenode
+![image](https://github.com/nolrenan/fiap_25abd_pd_ex1/blob/main/prints/manual_shew/estrutura_de_pastasarquivos_enviado_para_HDFS.png)
+- <b>Estrutura de pastas e arquivos copiadas no namenode
+![image](https://github.com/nolrenan/fiap_25abd_pd_ex1/blob/main/prints/manual_shew/estrutura_pastasarquivos_copiada_no_namenode.png)
 
 ### <b>4. Desenvolvimento semi-automatizado</b>
 
