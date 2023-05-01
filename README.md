@@ -35,8 +35,16 @@ Screenshots da execução dos scripts:
 
 [INSERIR IMAGENS]
 - script_bkp_dolar_dia.sh
+- <b>Step 1</b>: Após simulação da inserção da data do dia 2023-05-01, a pasta é criada com o arquivo da cotação
 ![image](https://github.com/nolrenan/fiap_25abd_pd_ex1/blob/main/prints/backup/backup_1.png)
-[INSERIR IMAGENS]
+![image](https://github.com/nolrenan/fiap_25abd_pd_ex1/blob/main/prints/backup/backup_2.png)
+
+- <b>Step 2</b>: "ls" da pasta dolar_dia_bkp antes da execução do script (inexistência da pasta do dia 2023-05-01)
+![image](https://github.com/nolrenan/fiap_25abd_pd_ex1/blob/main/prints/backup/backup_3.png)
+
+- <b>Step 3</b>: Execução do script de backup e listagem da pasta de backup após o processamento do script
+![image](https://github.com/nolrenan/fiap_25abd_pd_ex1/blob/main/prints/backup/backup_4.png)
+
 - script_retencao.sh
 
 [INSERIR IMAGENS]
