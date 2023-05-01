@@ -21,6 +21,6 @@ for i in range(90):
     url = "https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarDia(dataCotacao=@dataCotacao)?@dataCotacao="+f"'{mod_date.strftime('%m-%d-%Y')}'&$top=100&$skip=0&$format=json&$select=cotacaoCompra,cotacaoVenda,dataHoraCotacao"
     r = requests.get(url, stream=True)
     # Salvar Arquivo
-    nm_arq = mod_date.strftime('%Y_%m_%d')
-    with open(f'dolar_dia/{date_folder}/cotacao_dolar_{nm_arq}', "wb") as f:
+    dhm = mod_date.strftime('%Hh%M')
+    with open(f'dolar_dia/{date_folder}/cotacao_dolar_{dhm}', "wb") as f:
         f.write(r.content)
