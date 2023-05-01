@@ -46,7 +46,7 @@ A informação de horário presente no nome do arquivo ingerido foi implementada
 
 ![image](https://github.com/nolrenan/fiap_25abd_pd_ex1/blob/main/prints/manual/08-arquivo_repositorio.png)
 
-## <b>3.1 Implantação de forma manual por scripts em shell</b>
+## <b>3.1 Implantação por scripts em shell</b>
 - <b>Realizando a copia da estrutura dos arquivos
 ![image](https://github.com/nolrenan/fiap_25abd_pd_ex1/blob/main/prints/manual_shew/copia_estruturaarquivos.png)
 - <b>Criação do historico 
