@@ -46,8 +46,12 @@ A informação de horário presente no nome do arquivo ingerido foi implementada
 
 ![image](https://github.com/nolrenan/fiap_25abd_pd_ex1/blob/main/prints/manual/08-arquivo_repositorio.png)
 
+## <b>3.1 Implantação de forma manual por scripts em shell</b>
+- <b>teste </b>
+
 
 ### <b>4. Desenvolvimento semi-automatizado</b>
+
 Para possibiliar a execução das aplicações dentro do ambiente de big data fornecido, foram desenvolvidos 3 scripts em shell (.sh):
 - <b>Step 1 - cotacao_dolar_final.sh</b>: realiza a captura dos dados e armazenamento do conteúdo no HDFS, sem realizar qualquer tipo de tratamento na resposta recebida pela API.
 - <b>Step 2 - script_bkp_dolar_dia.sh</b>: geração de backup do dado ingerido para a pasta dolar_dia_bkp.
