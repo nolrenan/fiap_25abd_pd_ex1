@@ -2,6 +2,9 @@
 > MBA Engenharia de Dados FIAP | Turma 25ABD <br>
 Repositório para projeto do exercício 1 da matéria de <b>processamento e armazenamento distribuído de dados</b> do MBA de Engenharia de Dados.
 
+O ambiente de Big Data utilizado neste projeto está disponível no seguinte repositório:
+- https://github.com/fabiogjardim/bigdata_docker
+
 ### <b>1. Base de dados</b>
 Utilizamos como fonte de dados pública para o projeto a API de cotação do dólar comercial (venda e compra) disponibilizada pelo Banco Central do Brasil.
 As informações referentes à base podem ser encontradas através do seguinte link:
@@ -48,9 +51,6 @@ Para possibiliar a execução das aplicações dentro do ambiente de big data fo
 - <b>Step 2 - script_bkp_dolar_dia.sh</b>: geração de backup do dado ingerido para a pasta dolar_dia_bkp.
 - <b>Step 3 - script_retencao.sh</b>: gerencia a quantidade de dados que serão retidos no backup, ou seja, faz o expurgo dos dados mais antigos armazenados no backup. Este script tem como recebimento 1 argumento referente a pasta que será realizada a retenção. 
 - Ex.: <i>bash ./script_retencao.sh <b>dolar_dia</b></i> ou <i>bash ./script_retencao.sh <b>dolar_dia_bkp</b></i> 
-
-O ambiente de Big Data pode ser encontrado no seguinte repositório:
-- https://github.com/fabiogjardim/bigdata_docker
 
 ### <b>5. Screenshots da execução dos scripts</b>
 
