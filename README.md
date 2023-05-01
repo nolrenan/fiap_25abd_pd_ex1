@@ -18,7 +18,29 @@ Cotação do dólar capturada às 10h40 do dia 28/04/2023
 A informação de horário presente no nome do arquivo ingerido foi implementada para que todas as cotações capturadas de um mesmo dia sejam armazenadas. Desta forma, o processo permite alterações de periodicidade sem a necessidade de manutenção no processo.
 
 ### <b>3. Implantação de forma manual</b>
-[INSERCAO DE PRINTS]
+
+- <b>Step 1</b>: Acessando site do Banco Central do Brasil
+![image](https://github.com/nolrenan/fiap_25abd_pd_ex1/blob/main/prints/manual/01-acesso_portal_bacen.png)
+
+- <b>Step 2</b>: Link API cotação diária do dólar
+![image](https://github.com/nolrenan/fiap_25abd_pd_ex1/blob/main/prints/manual/02-cotacao_dolar_portal_bacen.png)
+
+- <b>Step 3</b>: Inserindo parâmetros para download arquivo .txt
+![image](https://github.com/nolrenan/fiap_25abd_pd_ex1/blob/main/prints/manual/03-download_json_portal_bacen.png)
+
+- <b>Step 4</b>: Criando diretório "dolar_dia" no HDFS via HUE (localhost:8888)
+![image](https://github.com/nolrenan/fiap_25abd_pd_ex1/blob/main/prints/manual/04-criar_pasta_dolar_dia_hdfs.png)
+
+![image](https://github.com/nolrenan/fiap_25abd_pd_ex1/blob/main/prints/manual/05-criar_pasta_dolar_dia_hdfs.png)
+
+- <b>Step 5</b>: Criando pasta referente à data de cotação
+![image](https://github.com/nolrenan/fiap_25abd_pd_ex1/blob/main/prints/manual/06-criar_pasta_cotacao_dolar.png)
+
+- <b>Step 6</b>: Upload de arquivo
+![image](https://github.com/nolrenan/fiap_25abd_pd_ex1/blob/main/prints/manual/07-upload_file.png)
+
+![image](https://github.com/nolrenan/fiap_25abd_pd_ex1/blob/main/prints/manual/08-arquivo_repositorio.png)
+
 
 ### <b>4. Desenvolvimento semi-automatizado</b>
 Para possibiliar a execução das aplicações dentro do ambiente de big data fornecido, foram desenvolvidos 3 scripts em shell (.sh):
